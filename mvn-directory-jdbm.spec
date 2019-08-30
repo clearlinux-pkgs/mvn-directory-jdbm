@@ -4,12 +4,15 @@
 #
 Name     : mvn-directory-jdbm
 Version  : 2.0.0.m2
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2-sources.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2-sources.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/directory/jdbm/apacheds-jdbm-parent/2.0.0-M2/apacheds-jdbm-parent-2.0.0-M2.pom
-Source2  : https://repo1.maven.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.jar
-Source3  : https://repo1.maven.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.pom
+Source2  : https://repo1.maven.org/maven2/org/apache/directory/jdbm/apacheds-jdbm-parent/2.0.0-M3/apacheds-jdbm-parent-2.0.0-M3.pom
+Source3  : https://repo1.maven.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.jar
+Source4  : https://repo1.maven.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.pom
+Source5  : https://repo1.maven.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M3/apacheds-jdbm1-2.0.0-M3.jar
+Source6  : https://repo1.maven.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M3/apacheds-jdbm1-2.0.0-M3.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -49,11 +52,20 @@ cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jd
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm-parent/2.0.0-M2
 cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm-parent/2.0.0-M2/apacheds-jdbm-parent-2.0.0-M2.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.jar
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm-parent/2.0.0-M3
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm-parent/2.0.0-M3/apacheds-jdbm-parent-2.0.0-M3.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.pom
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M3
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M3/apacheds-jdbm1-2.0.0-M3.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M3
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M3/apacheds-jdbm1-2.0.0-M3.pom
 
 
 %files
@@ -62,9 +74,12 @@ cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/jd
 %files data
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm-parent/2.0.0-M2/apacheds-jdbm-parent-2.0.0-M2.pom
+/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm-parent/2.0.0-M3/apacheds-jdbm-parent-2.0.0-M3.pom
 /usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2-sources.jar
 /usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.jar
 /usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.pom
+/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M3/apacheds-jdbm1-2.0.0-M3.jar
+/usr/share/java/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M3/apacheds-jdbm1-2.0.0-M3.pom
 
 %files license
 %defattr(0644,root,root,0755)
