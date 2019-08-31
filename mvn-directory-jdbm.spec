@@ -4,7 +4,7 @@
 #
 Name     : mvn-directory-jdbm
 Version  : 2.0.0.m2
-Release  : 3
+Release  : 4
 URL      : https://repo1.maven.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2-sources.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2-sources.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/directory/jdbm/apacheds-jdbm-parent/2.0.0-M2/apacheds-jdbm-parent-2.0.0-M2.pom
